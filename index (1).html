@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio_Biswajit</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Biswajit</div>
+    <button class="contact-btn">Contact</button>
+  </header>
+
+  <nav class="scroll-indicator">
+    <a href="#home" class="dot active" title="Home"></a>
+    <a href="#about" class="dot" title="About"></a>
+    <a href="#services" class="dot" title="Services"></a>
+    <a href="#contact" class="dot" title="Contact"></a>
+  </nav>
+
+  <section id="home">
+    <div class="title-sec">
+      <h1>Developer & Designer</h1>
+      <div class="location">
+        <p>BASED In INDIA</p>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.84/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/TBvB-63CG6dVL3To/scene.splinecode"></spline-viewer>
+    <div class="scrolldown"></div>
+  </section>
+
+  <section id="about">
+    <div class="bio-section">
+      <video class="bio-video" autoplay muted loop playsinline>
+        <source src="ShirtVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <img src="photo_2025-03-16_21-39-52.jpg" class="img_me" alt="Biswajit">
+      <div class="bio-text">
+        <p class="bio">ABOUT ME</p>
+        <p class="para">
+          I'm a developer and designer who creates modern, responsive websites and compelling visual experiences.
+          With a strong eye for detail and a passion for both form and function, I bring ideas to life through thoughtful design
+          and clean, purposeful code—whether it's for the web, digital art, or 3D visuals.
+        </p>
+        <a href="Biswajit_Resume.pdf" class="resume-btn" target="_blank">View My Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h1>Services</h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="cloud.jpg" class="service-icon">
+        <h3>Cloud Architecture</h3>
+        <p>Designing and implementing robust, scalable, and secure cloud infrastructures tailored to your business needs. Specializing in AWS, Azure, and Google Cloud platforms.</p>
+      </div>
+      <div class="service-card">
+        <img src="64.jpg" class="service-icon">
+        <h3>UI/UX Design</h3>
+        <p>Creating intuitive and engaging user experiences through thoughtful design. From wireframes to high-fidelity prototypes that drive user satisfaction.</p>
+      </div>
+      <div class="service-card">
+        <img src="paint.jpg" class="service-icon">
+        <h3>Web & Mobile Development</h3>
+        <p>Building responsive web applications and mobile interfaces with a focus on performance and accessibility.</p>
+      </div>
+      <div class="service-card">
+        <img src="graphic.png" class="service-icon">
+        <h3>Graphic Design</h3>
+        <p>Crafting visually compelling designs for digital and print media. From brand identities to marketing materials that capture attention.</p>
+      </div>
+    </div><!-- Gallery Carousel below the service cards -->
+    <div class="carousel-text-container">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="gta6.jpg" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="Dune22.png" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="Daredevil2.1.png" alt="Image 3">
+          </div>
+        </div>
+        <button class="carousel-btn prev-btn">&lt;</button>
+        <button class="carousel-btn next-btn">&gt;</button>
+      </div>
+      <div class="carousel-text">
+        <h2>My Work</h2>
+        <p>Explore my latest projects and creative works. Each piece represents my passion for design and development, showcasing innovative solutions and beautiful aesthetics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1>Get In Touch</h1>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="CALL.png" alt="Phone" class="contact-icon">
+          <div class="contact-details">
+            <h3>Phone</h3>
+            <p>+91 1234567890</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <img src="LOC.png" alt="Location" class="contact-icon">
+          <div class="contact-details">
+            <h3>Location</h3>
+            <p>Bhubaneswar, Odisha, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <img src="mail.png" alt="Email" class="contact-icon">
+          <div class="contact-details">
+            <h3>Email</h3>
+            <p>your.email@example.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="social-links">
+        <h3>Connect With Me</h3>
+        <div class="social-icons">
+          <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <img src="in.png" >
+          </a>
+          <a href="https://github.com" target="_blank" class="social-icon">
+            <img src="gh.png" >
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-icon">
+            <img src="twitter.jpg" >
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-icon">
+            <img src="ig.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Biswajit. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const dots = document.querySelectorAll(".dot");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (pageYOffset >= sectionTop - 100 && pageYOffset < sectionTop + sectionHeight - 100) {
+          current = section.getAttribute("id");
+        }
+      });
+      dots.forEach(dot => {
+        dot.classList.remove("active");
+        if (dot.getAttribute("href") === "#" + current) {
+          dot.classList.add("active");
+        }
+      });
+    });
+
+    // Automatic carousel movement every 4 seconds
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    function moveToNextSlide() {
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarouselPosition();
+    }
+
+    function moveToPrevSlide() {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        updateCarouselPosition();
+    }
+
+    function updateCarouselPosition() {
+        const carousel = document.querySelector('.carousel');
+        const offset = -100 * currentIndex;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Add click event listeners to buttons
+    prevBtn.addEventListener('click', moveToPrevSlide);
+    nextBtn.addEventListener('click', moveToNextSlide);
+
+    // Automatic slideshow
+    let slideshowInterval = setInterval(moveToNextSlide, 4000);
+
+    // Pause slideshow when hovering over carousel
+    const carouselContainer = document.querySelector('.carousel-container');
+    carouselContainer.addEventListener('mouseenter', () => {
+        clearInterval(slideshowInterval);
+    });
+
+    carouselContainer.addEventListener('mouseleave', () => {
+        slideshowInterval = setInterval(moveToNextSlide, 4000);
+    });
+  </script>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const dots = document.querySelectorAll(".dot");
+
+  const activateDot = (index) => {
+    dots.forEach(dot => dot.classList.remove("active"));
+    if (dots[index]) {
+      dots[index].classList.add("active");
+    }
+  };
+
+  const observerOptions = {
+    threshold: 0.6, // Adjust as needed for when the section becomes "active"
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const index = Array.from(sections).indexOf(entry.target);
+        activateDot(index);
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(section => observer.observe(section));
+});
+</script>
+
+</body>
+</html>
